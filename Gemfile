@@ -2,18 +2,22 @@ source 'https://rubygems.org'
 
 gem 'rails'
 
-group :assets do
-  gem 'sass-rails'  
-  gem 'coffee-rails'
-  gem 'uglifier'
-end
 
 group :test do
-  gem 'capybara', '1.1.2'
+  gem 'selenium-webdriver'
+  gem 'capybara'
 end
 
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder'
+
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :doc do
