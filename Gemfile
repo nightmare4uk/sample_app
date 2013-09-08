@@ -4,8 +4,9 @@ gem 'rails'
 
 
 group :test do
-  gem 'selenium-webdriver'
-  gem 'capybara'
+  gem 'selenium-webdriver' # Для capybara
+  gem 'capybara' #Для симмуляции пользователя
+  gem 'libnotify' # для лога guard
 end
 
 gem 'sass-rails'
@@ -27,7 +28,11 @@ end
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'rspec-rails'
+  gem 'spork-rails', github: 'sporkrb/spork-rails'	
+  gem 'childprocess'
+  gem 'guard-spork'
+  gem 'rspec-rails' #Сами тесты
+  gem 'guard-rspec' #для автоматического тестирования
 end
 
 gem 'jquery-rails'
