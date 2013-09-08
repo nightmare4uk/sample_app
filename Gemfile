@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rails'
-
+gem 'bootstrap-sass'
 
 group :test do
   gem 'selenium-webdriver' # Для capybara
   gem 'capybara' #Для симмуляции пользователя
   gem 'libnotify' # для лога guard
+  gem "factory_girl_rails"
 end
 
 gem 'sass-rails'
