@@ -3,11 +3,13 @@
 
 require 'active_support/core_ext'
 
-guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' }, :rspec_env => { 'RAILS_ENV' => 'test' } do
+guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' },
+      :rspec_env    => { 'RAILS_ENV' => 'test' } do
   watch('config/application.rb')
   watch('config/environment.rb')
   watch('config/environments/test.rb')
   watch(%r{^config/initializers/.+\.rb$})
+  watch('Gemfile')
   watch('Gemfile.lock')
   watch('spec/spec_helper.rb') { :rspec }
   watch('test/test_helper.rb') { :test_unit }
@@ -29,11 +31,11 @@ guard 'rspec', all_after_pass: false do
      "spec/#{m[2]}s/#{m[1]}_#{m[2]}_spec.rb",
      "spec/acceptance/#{m[1]}_spec.rb",
      (m[1][/_pages/] ? "spec/requests/#{m[1]}_spec.rb" :
-                       "spec/requests/#{m[1].singularize}_pages_spec.rb")]
+         "spec/requests/#{m[1].singularize}_pages_spec.rb")]
   end
   watch(%r{^app/views/(.+)/}) do |m|
     (m[1][/_pages/] ? "spec/requests/#{m[1]}_spec.rb" :
-                      "spec/requests/#{m[1].singularize}_pages_spec.rb")
+        "spec/requests/#{m[1].singularize}_pages_spec.rb")
   end
   watch(%r{^app/controllers/sessions_controller\.rb$}) do |m|
     "spec/requests/authentication_pages_spec.rb"

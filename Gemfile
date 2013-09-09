@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :test do
   gem 'selenium-webdriver' # Для capybara
@@ -34,6 +35,7 @@ group :development, :test do
   gem 'guard-spork'
   gem 'rspec-rails' #Сами тесты
   gem 'guard-rspec' #для автоматического тестирования
+  gem 'quiet_assets' #убирает лишнюю информациюю с лога сервера
 end
 
 gem 'jquery-rails'

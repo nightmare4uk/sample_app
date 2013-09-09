@@ -1,0 +1,41 @@
+commit 8ffc0e4a6f77f82bc7da5f85fd4d1c75a99f42fb
+Author: nightmare4uk <jokobako@gmail.com>
+Date:   Sun Sep 8 14:06:01 2013 +0300
+
+    Add a full_title helper
+
+commit da0744d65432b124d63c47fcf85111f6770af01f
+Author: nightmare4uk <jokobako@gmail.com>
+Date:   Sat Sep 7 19:14:09 2013 +0300
+
+    Add Contact-page
+
+commit ce8094c9e4836fbe955e5ab8a311dad91c82e3e6
+Author: nightmare4uk <jokobako@gmail.com>
+Date:   Sat Sep 7 18:06:34 2013 +0300
+
+    Finish static pages
+
+commit bed8900ff5e30a79fba6b6f5aaf2f4047903fc86
+Author: nightmare4uk <jokobako@gmail.com>
+Date:   Sat Sep 7 17:07:52 2013 +0300
+
+    Add a StaticPages controller
+
+commit 2f10e860bf7a1b8897ee882ce0bf606db19791b3
+Author: nightmare4uk <jokobako@gmail.com>
+Date:   Sat Sep 7 16:51:24 2013 +0300
+
+    Change Gemfile
+
+commit 536b09673aec03eed217ad11fcf8dec4e381eeeb
+Author: nightmare4uk <jokobako@gmail.com>
+Date:   Sat Sep 7 16:39:01 2013 +0300
+
+    Improve the README
+
+commit 183b22569d0ccb0085434e5a5a61cb0ea9efc4a4
+Author: nightmare4uk <jokobako@gmail.com>
+Date:   Sat Sep 7 16:37:56 2013 +0300
+
+    Initial commit
